@@ -1,0 +1,16 @@
+{
+  "name": "group-backend",
+  "version": "1.0.0",
+  "main": "ourconverters.js",
+  "scripts": {
+    "start": "node ourconverters.js",
+    "dev": "nodemon ourconverters.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

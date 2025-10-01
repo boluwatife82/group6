@@ -1,0 +1,22 @@
+// group6fomula.js
+module.exports = {
+  kmToMiles: (val) => val * 0.621371,
+  milesToKm: (val) => val / 0.621371,
+  mToCm: (val) => val * 100,
+  cmToM: (val) => val / 100,
+  cmToInches: (val) => val / 2.54,
+  inchesToCm: (val) => val * 2.54,
+  cToF: (val) => (val * 9) / 5 + 32,
+  fToC: (val) => ((val - 32) * 5) / 9,
+  cToK: (val) => val + 273.15,
+  kToC: (val) => val - 273.15,
+  mToFt: (val) => val * 3.28084,
+  ftToM: (val) => val / 3.28084,
+  kgToLbs: (val) => val * 2.20462,
+  lbsToKg: (val) => val / 2.20462,
+  gToOz: (val) => val * 0.035274,
+  lToGal: (val) => val * 0.264172,
+  hrsToMins: (val) => val * 60,
+  calToJ: (val) => val * 4.184,
+  jToCal: (val) => val / 4.184,
+};
