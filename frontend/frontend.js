@@ -18,10 +18,15 @@ convertBtn.addEventListener("click", async () => {
       `http://localhost:3000/convert?value=${value}&type=${type}`
     );
     const data = await res.json();
-    resultBox.value = data.result;
+
+    if (data.error) {
+      resultBox.value = data.error;
+    } else {
+      resultBox.value = `${data.input} → ${data.result}`;
+    }
   } catch (err) {
-    console.error(err);
     resultBox.value = "Error connecting to backend.";
+    console.error(err);
   }
 });
 

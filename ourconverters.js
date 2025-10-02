@@ -1,14 +1,21 @@
+// index.js (Backend Entry Point)
+
 const express = require("express");
-const converters = require("./group6fomula.js");
+const path = require("path");
+const cors = require("cors");
+const converters = require("./group6fomula.js"); // your conversion formulas
 
 const app = express();
 const PORT = 3000;
 
-console.log("Registration Number: our group 6");
-console.log("Check converters object:", converters);
+// Enable CORS (so frontend can fetch)
+app.use(cors());
 
-console.log("Available types:", Object.keys(converters));
+// Serve static frontend files if you have any (index.html, etc.)
+// Example: put frontend files inside "frontend" folder
+app.use(express.static(path.join(__dirname, "frontend")));
 
+// API endpoint for conversion
 app.get("/convert", (req, res) => {
   const { value, type } = req.query;
 
@@ -34,11 +41,12 @@ app.get("/convert", (req, res) => {
   });
 });
 
-// Home test
+// Default route
 app.get("/", (req, res) => {
   res.send("Welcome! Example: /convert?value=100&type=kmToMiles");
 });
 
+// Start server
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`✅ Server running at http://localhost:${PORT}`);
 });

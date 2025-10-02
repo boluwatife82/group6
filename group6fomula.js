@@ -17,6 +17,12 @@ module.exports = {
   gToOz: (val) => val * 0.035274,
   lToGal: (val) => val * 0.264172,
   hrsToMins: (val) => val * 60,
+  minToHrs: (val) => val / 60,
+  hrsToMin: (val) => val * 60,
+  hrsToSec: (val) => val * 3600,
+  secToHrs: (val) => val / 3600,
+  minToSec: (val) => val * 60,
+  secToMin: (val) => val / 60,
   calToJ: (val) => val * 4.184,
   jToCal: (val) => val / 4.184,
 };
