@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 89vh;
+  display: flex;
+}
+section .imgBx {
+  position: relative;
+  width: 50%;
+  height: 112%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(ndown1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+section .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .contentBx {
+  display: flex;
+  width: 50%;
+  height: 112%;
+  justify-content: center;
+  align-items: center;
+}
+section .contentBx .formBx {
+  width: 50%;
+}
+section .contentBx .formBx h2 {
+  color: red;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 4px solid green;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+section .contentBx .formBx .inputBx {
+  margin-bottom: 20px;
+}
+section .contentBx .formBx .inputBx span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+section .contentBx .formBx .inputBx input,
+#conversion {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid green;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: cornflowerblue;
+  background: transparent;
+  border-radius: 30px;
+}
+section .contentBx .formBx .inputBx input[type="submit"] {
+  background: cornflowerblue;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+button {
+  width: 50%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid cornflowerblue;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: black;
+  background-image: linear-gradient(to right, green, yellow, red);
+  border-radius: 30px;
+}
+a {
+  text-decoration: none;
+}
+.inputBx2 {
+  word-spacing: 80;
+}
+button:hover {
+  background-image: radial-gradient(green, yellow, red);
+}
+a:hover {
+  color: cornflowerblue;
+}
+
+@media screen and (max-width: 1300px) {
+  .inputBx2 {
+    word-spacing: 60;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .inputBx2 {
+    word-spacing: 40;
+  }
+}
+@media screen and (max-width: 990px) {
+  .inputBx2 {
+    word-spacing: 30;
+  }
+}
+@media screen and (max-width: 905px) {
+  section .imgBx {
+    width: 30%;
+  }
+  section .contentBx {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 665px) {
+  .inputBx2 {
+    word-spacing: 20;
+  }
+}
+@media screen and (max-width: 607px) {
+  section .contentBx .formBx {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 380px) {
+  section .imgBx {
+    display: none;
+  }
+  section .contentBx {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 265px) {
+  .inputBx2 {
+    word-spacing: 10;
+  }
+}
