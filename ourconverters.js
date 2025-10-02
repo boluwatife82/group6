@@ -1,4 +1,5 @@
 // index.js (Backend Entry Point)
+//uche this comment will help you
 
 const express = require("express");
 const path = require("path");
@@ -6,13 +7,13 @@ const cors = require("cors");
 const converters = require("./group6fomula.js"); // your conversion formulas
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-// Enable CORS (so frontend can fetch)
+// the will wake our CORS (so frontend can fetch)
 app.use(cors());
 
 // Serve static frontend files if you have any (index.html, etc.)
-// Example: put frontend files inside "frontend" folder
+//how far uche this one na the main thing oo
 app.use(express.static(path.join(__dirname, "frontend")));
 
 // API endpoint for conversion
