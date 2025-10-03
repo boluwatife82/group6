@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // the will wake our CORS (so frontend can fetch)
-app.use(cors());
+app.use(cors({ origin: "*" }));
 
 // Serve static frontend files if you have any (index.html, etc.)
 //how far uche this one na the main thing oo
