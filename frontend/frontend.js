@@ -15,7 +15,8 @@ convertBtn.addEventListener("click", async () => {
 
   try {
     const res = await fetch(
-      `http://localhost:3000/convert?value=${value}&type=${type}`
+      `https://group6-1.onrender.com/convert?value=${value}&type=${conversionType}`
+
     );
     const data = await res.json();
 
